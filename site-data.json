@@ -10,13 +10,6 @@
   },
   "categories": [
     {
-      "key": "playstation",
-      "name_ar": "العاب سوني",
-      "name_en": "PlayStation Games",
-      "banner_image": "assets/ps-banner.svg",
-      "active": true
-    },
-    {
       "key": "cards",
       "name_ar": "شحن واشتراكات",
       "name_en": "Cards & Subscriptions",
@@ -35,6 +28,13 @@
       "name_ar": "العاب البيسي",
       "name_en": "PC Games",
       "banner_image": "assets/pc-banner.png",
+      "active": true
+    },
+    {
+      "key": "playstation",
+      "name_ar": "العاب سوني",
+      "name_en": "PlayStation Games",
+      "banner_image": "assets/ps-banner.png",
       "active": true
     }
   ],
