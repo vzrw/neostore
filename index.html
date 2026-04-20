@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <link rel="icon" type="image/png" href="assets/logo.svg">
+  <meta charset="UTF-8" />
+  <title>Neostore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header class="main-header">
+  <div class="logo-area">
+    <a href="index.html" class="logo-link">
+      <img src="assets/logo.svg" alt="شعار Neostore" class="logo-img" />
+      <span class="logo-text">متجر Neostore</span>
+    </a>
+  </div>
+
+  <div class="header-actions">
+    <a href="#" id="whatsappBtn" target="_blank" class="whatsapp-btn">تواصل واتساب</a>
+    <a href="#" id="instagramBtn" target="_blank" class="instagram-btn">انستغرام</a>
+    <button class="lang-toggle active" data-lang="ar">العربية</button>
+    <button class="lang-toggle" data-lang="en">EN</button>
+    <a href="cart.html" class="cart-link">🛒 <span id="cart-count">0</span></a>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1 data-i18n-ar="مرحبًا بك في متجر Neostore" data-i18n-en="Welcome to Neostore">مرحبًا بك في متجر Neostore</h1>
+    <p data-i18n-ar="اختر القسم المناسب وتصفح المنتجات بسهولة" data-i18n-en="Choose a category and browse products">اختر القسم المناسب وتصفح المنتجات بسهولة</p>
+  </section>
+
+  <section class="categories-section">
+    <h2 data-i18n-ar="الأقسام" data-i18n-en="Categories">الأقسام</h2>
+    <div id="categories-grid" class="categories-grid"></div>
+  </section>
+</main>
+
+<footer class="main-footer">
+  <p>© <span id="year"></span> Neostore</p>
+</footer>
+
+<div id="toast" class="toast"></div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
