@@ -10,13 +10,6 @@
   },
   "categories": [
     {
-      "key": "cards",
-      "name_ar": "شحن واشتراكات",
-      "name_en": "Cards & Subscriptions",
-      "banner_image": "assets/cards-banner.svg",
-      "active": true
-    },
-    {
       "key": "fortnite",
       "name_ar": "فورت نايت",
       "name_en": "Fortnite",
@@ -36,12 +29,20 @@
       "name_en": "PlayStation Games",
       "banner_image": "assets/ps-banner.png",
       "active": true
+    },
+    {
+      "key": "شحن واشتراكات",
+      "name_ar": "شحن واشتراكات",
+      "name_en": "Cards & Subscriptions",
+      "banner_image": "assets/cards-banner.svg",
+      "active": true
     }
   ],
   "products": {
     "pc_games": [],
     "playstation": [],
-    "cards": [
+    "fortnite": [],
+    "شحن واشتراكات": [
       {
         "id": "ps_plus",
         "name_ar": "PS PLUS",
@@ -66,7 +67,6 @@
         ],
         "active": true
       }
-    ],
-    "fortnite": []
+    ]
   }
 }
