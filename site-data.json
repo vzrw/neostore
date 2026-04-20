@@ -31,7 +31,7 @@
       "active": true
     },
     {
-      "key": "شحن واشتراكات",
+      "key": "cards",
       "name_ar": "شحن واشتراكات",
       "name_en": "Cards & Subscriptions",
       "banner_image": "assets/cards-banner.svg",
@@ -58,6 +58,6 @@
         "active": true
       }
     ],
-    "شحن واشتراكات": []
+    "cards": []
   }
 }
