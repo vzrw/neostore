@@ -331,7 +331,7 @@ function fillInputs() {
   document.getElementById('whatsappInput').value = adminSite.settings.whatsappPhone || '';
   document.getElementById('adminCodeInput').value = adminSite.settings.adminCode || '123456';
   const productCatSelect = document.getElementById('productCategoryInput');
-  productCatSelect.innerHTML = (adminSite.categories || []).map(c => `<option value="${escapeHtml(c.key)}">${escapeHtml(c.name_ar)}</option>`).join('');
+  productCatSelect.innerHTML = (adminSite.categories || []).map(c => `<option value="${escapeHtml(c.key)}">${escapeHtml(c.name_ar)} — ${escapeHtml(c.key)}</option>`).join('');
 }
 
 function renderAdmin() {
@@ -452,7 +452,7 @@ document.getElementById('productImageFileInput').addEventListener('change', func
 });
 
 document.getElementById('saveProductBtn').onclick = () => {
-  const catKey = document.getElementById('productCategoryInput').value;
+  const catKey = document.getElementById('productCategoryInput').value.trim();
   const id = document.getElementById('productIdInput').value.trim();
   const nameAr = document.getElementById('productNameArInput').value.trim();
   if (!catKey || !id || !nameAr) return alert('اختر القسم واكتب ID واسم المنتج');
@@ -480,14 +480,18 @@ document.getElementById('saveProductBtn').onclick = () => {
     options,
     active: true
   };
-  adminSite.products[catKey] = adminSite.products[catKey] || [];
+
+  if (!adminSite.products) adminSite.products = {};
+  if (!adminSite.products[catKey]) adminSite.products[catKey] = [];
+
   adminSite.products[catKey] = adminSite.products[catKey].filter(p => p.id !== id);
   adminSite.products[catKey].push(product);
+
   uploadedProductImage = '';
   document.getElementById('productImageFileInput').value = '';
   saveSite(adminSite);
   renderAdmin();
-  alert('تم حفظ المنتج');
+  alert('تم حفظ المنتج داخل قسم: ' + catKey);
 };
 
 document.getElementById('exportBtn').onclick = () => {
