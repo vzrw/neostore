@@ -2,7 +2,7 @@
   "settings": {
     "storeName": "Neostore",
     "heroTitle": "متجر Neostore للألعاب والتقنية",
-    "heroDesc": "استكشف الاقسام، ألعاب رقمية وشحن واشتراكات مع طلب عبر واتساب.",
+    "heroDesc": "استكشف الاقسام، ألعاب رقمية وشحن واشتراكات مع طلب عبر واتساب او الانستقرام .",
     "instagramUrl": "https://instagram.com/neostore.om",
     "whatsappPhone": "96876969116",
     "adminCode": "123456",
@@ -94,15 +94,15 @@
         "images": [
           "assets/ps-plus.svg"
         ],
-        "price": 9.5,
+        "price": 2,
         "oldPrice": 0,
         "shortDesc": "اشتراك بلايستيشن",
         "longDesc": "يمكنك وضع أكثر من خيار سعر من لوحة التحكم.",
-        "status": "",
+        "status": "new",
         "options": [
           {
             "label": "أساسي",
-            "price": 9.5
+            "price": 2
           },
           {
             "label": "إكسترا",
