@@ -1,5 +1,0 @@
-id,name_ar,name_en,images,price_omr,discount_price_omr,short_desc_ar,long_desc_ar,status,options,active
-c1,بطاقة اكس بوكس,Xbox Card,xbox-card.png,4.500,,رصيد متجر Xbox للألعاب,بطاقة رقمية فورية.,new,5 OMR;4.500|10 OMR;8.900,1
-c2,بطاقة بلايستيشن,PlayStation Card,ps-card.png,4.500,,رصيد متجر PlayStation,بطاقة رقمية فورية.,new,5 OMR;4.500|10 OMR;8.900,1
-c3,بطاقة ستيم,Steam Card,steam-card.png,4.500,,رصيد متجر Steam,بطاقة رقمية فورية.,new,5 OMR;4.500|10 OMR;8.900,1
-c4,اشتراك ChatGPT Plus,ChatGPT Plus,chatgpt-card.png,1.000,,اشتراك شهر واحد,خدمة رقمية لمدة شهر.,sale,,1
