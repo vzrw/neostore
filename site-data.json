@@ -39,160 +39,34 @@
     }
   ],
   "products": {
-    "pc_games": [
-      {
-        "id": "pc1",
-        "name_ar": "Resident Evil Requiem",
-        "name_en": "Resident Evil Requiem",
-        "images": [
-          "assets/resident-evil.svg"
-        ],
-        "price": 2.5,
-        "oldPrice": 0,
-        "shortDesc": "نسخة رقمية للحاسب",
-        "longDesc": "نسخة رقمية للحاسب مع تسليم سريع ودعم فني عبر واتساب.",
-        "status": "sale",
-        "options": [],
-        "active": true
-      },
-      {
-        "id": "pc2",
-        "name_ar": "Crimson Desert",
-        "name_en": "Crimson Desert",
-        "images": [
-          "assets/crimson-desert.svg"
-        ],
-        "price": 3,
-        "oldPrice": 0,
-        "shortDesc": "مغامرة وأكشن للحاسب",
-        "longDesc": "منتج تجريبي قابل للتعديل من لوحة التحكم.",
-        "status": "new",
-        "options": [],
-        "active": true
-      }
-    ],
-    "playstation": [
-      {
-        "id": "ps1",
-        "name_ar": "FC 25 PS5",
-        "name_en": "FC 25 PS5",
-        "images": [
-          "assets/fc25-ps.svg"
-        ],
-        "price": 15.9,
-        "oldPrice": 17.9,
-        "shortDesc": "نسخة بلايستيشن 5",
-        "longDesc": "منتج تجريبي مع خصم ظاهر في الصفحة.",
-        "status": "sale",
-        "options": [],
-        "active": true
-      },
-      {
-        "id": "ps2",
-        "name_ar": "PS Plus",
-        "name_en": "PS Plus",
-        "images": [
-          "assets/ps-plus.svg"
-        ],
-        "price": 2,
-        "oldPrice": 0,
-        "shortDesc": "اشتراك بلايستيشن",
-        "longDesc": "يمكنك وضع أكثر من خيار سعر من لوحة التحكم.",
-        "status": "new",
-        "options": [
-          {
-            "label": "أساسي",
-            "price": 2
-          },
-          {
-            "label": "إكسترا",
-            "price": 12.5
-          }
-        ],
-        "active": true
-      }
-    ],
+    "pc_games": [],
+    "playstation": [],
     "cards": [
       {
-        "id": "c1",
-        "name_ar": "بطاقة اكس بوكس",
-        "name_en": "Xbox Card",
+        "id": "ps_plus",
+        "name_ar": "PS PLUS",
+        "name_en": "PS PLUS",
         "images": [
           "assets/xbox-card.svg"
         ],
-        "price": 4.5,
-        "oldPrice": 0,
-        "shortDesc": "شحن متجر اكس بوكس",
-        "longDesc": "بطاقة رقمية فورية.",
+        "price": 2.5,
+        "oldPrice": 4.5,
+        "shortDesc": "اشتراك PS PLUS شهر",
+        "longDesc": "اشتراك PS PLUS شهر - تسليم عبر الواتس او انستا",
         "status": "new",
         "options": [
           {
-            "label": "5 OMR",
-            "price": 4.5
+            "label": "شهر",
+            "price": 2.5
           },
           {
-            "label": "10 OMR",
-            "price": 8.9
+            "label": "3 شهور",
+            "price": 6.9
           }
         ],
-        "active": true
-      },
-      {
-        "id": "c2",
-        "name_ar": "بطاقة ستيم",
-        "name_en": "Steam Card",
-        "images": [
-          "assets/steam-card.svg"
-        ],
-        "price": 4.5,
-        "oldPrice": 0,
-        "shortDesc": "شحن متجر ستيم",
-        "longDesc": "رصيد رقمي للألعاب.",
-        "status": "",
-        "options": [],
-        "active": true
-      },
-      {
-        "id": "c3",
-        "name_ar": "اشتراك ChatGPT Plus",
-        "name_en": "ChatGPT Plus",
-        "images": [
-          "assets/chatgpt-card.svg"
-        ],
-        "price": 1,
-        "oldPrice": 0,
-        "shortDesc": "اشتراك شهر واحد",
-        "longDesc": "منتج رقمي قابل للتعديل.",
-        "status": "sale",
-        "options": [],
         "active": true
       }
     ],
-    "fortnite": [
-      {
-        "id": "f1",
-        "name_ar": "شحن V-Bucks",
-        "name_en": "V-Bucks",
-        "images": [
-          "assets/vbucks.svg"
-        ],
-        "price": 7.5,
-        "oldPrice": 0,
-        "shortDesc": "شحن فورت نايت",
-        "longDesc": "منتج تجريبي لفورت نايت.",
-        "status": "new",
-        "options": [
-          {
-            "label": "1000 V-Bucks",
-            "price": 7.5
-          },
-          {
-            "label": "2800 V-Bucks",
-            "price": 18.9
-          }
-        ],
-        "active": true
-      }
-    ]
+    "fortnite": []
   }
 }
