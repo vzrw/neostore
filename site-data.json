@@ -41,32 +41,23 @@
   "products": {
     "pc_games": [],
     "playstation": [],
-    "fortnite": [],
-    "شحن واشتراكات": [
+    "fortnite": [
       {
-        "id": "ps_plus",
-        "name_ar": "PS PLUS",
-        "name_en": "PS PLUS",
+        "id": "vebox_500",
+        "name_ar": "VEBOX",
+        "name_en": "VEBOX",
         "images": [
           "assets/xbox-card.svg"
         ],
-        "price": 2.5,
-        "oldPrice": 4.5,
-        "shortDesc": "اشتراك PS PLUS شهر",
-        "longDesc": "اشتراك PS PLUS شهر - تسليم عبر الواتس او انستا",
+        "price": 2,
+        "oldPrice": 4,
+        "shortDesc": "fort",
+        "longDesc": "fort",
         "status": "new",
-        "options": [
-          {
-            "label": "شهر",
-            "price": 2.5
-          },
-          {
-            "label": "3 شهور",
-            "price": 6.9
-          }
-        ],
+        "options": [],
         "active": true
       }
-    ]
+    ],
+    "شحن واشتراكات": []
   }
 }
