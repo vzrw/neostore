@@ -4,7 +4,7 @@
     "heroTitle": "مرحباً بك في متجر Neostore",
     "heroDesc": "اختر القسم المناسب وتصفح المنتجات",
     "instagramUrl": "https://instagram.com/neostore.om",
-    "whatsappPhone": "96894390492",
+    "whatsappPhone": "96876969116",
     "adminCode": "123456",
     "currency": "ر.ع",
     "logo": "assets/logo.png"
@@ -1219,6 +1219,22 @@
         "platform": "PC \\ Steam",
         "active": "1",
         "options": "منصة ستيم:2.5"
+      },
+      {
+        "id": "hh",
+        "name_ar": "hh",
+        "name_en": "hh",
+        "price_omr": "11",
+        "discount_price_omr": "4",
+        "status": "new",
+        "images": "",
+        "short_desc_ar": "",
+        "short_desc_en": "",
+        "long_desc_ar": "",
+        "long_desc_en": "",
+        "platform": "",
+        "active": "1",
+        "options": ""
       }
     ],
     "cards": [
