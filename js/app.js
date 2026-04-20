@@ -303,7 +303,7 @@ function renderSingleProduct(product, categoryKey, currency='ر.ع') {
   const price = document.createElement('span'); price.className='product-price'; price.textContent=`${mainPrice.toFixed(3)} ${currency}`; priceRow.appendChild(price);
   if (!options.length && useDiscount) { const old=document.createElement('span'); old.className='product-old-price'; old.textContent=`${safePrice(product.price_omr).toFixed(3)} ${currency}`; priceRow.appendChild(old); }
   const shortDesc=document.createElement('p'); shortDesc.className='product-details-short'; shortDesc.textContent=product.short_desc_ar||'';
-  const longDesc=document.createElement('p'); longDesc.className='product-details-long collapsed'; longDesc.innerHTML = (product.long_desc_ar || '').replace(/\r?\n/g, '<br>');
+  const longDesc=document.createElement('p'); longDesc.className='product-details-long collapsed'; longDesc.innerHTML=(product.long_desc_ar||'').replace(/\r?\n/g,'<br>');
   const readMore=document.createElement('button'); readMore.className='read-more-btn'; readMore.textContent='إظهار المزيد';
   readMore.addEventListener('click',()=>{ const collapsed=longDesc.classList.toggle('collapsed'); readMore.textContent=collapsed?'إظهار المزيد':'إظهار أقل'; });
 
