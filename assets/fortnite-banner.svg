@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0%" stop-color="#240000"/><stop offset="100%" stop-color="#0f0f0f"/></linearGradient></defs>
+<rect width="1600" height="900" fill="#050505"/>
+<rect x="24" y="24" width="1552" height="852" rx="30" fill="url(#g)" stroke="#ff1e3c" stroke-width="6"/>
+<circle cx="1400" cy="160" r="120" fill="rgba(255,255,255,0.08)"/>
+<circle cx="200" cy="140" r="70" fill="rgba(255,255,255,0.08)"/>
+<path d="M0 720 C220 520, 420 780, 700 600 S1220 380, 1600 620 L1600 900 L0 900 Z" fill="rgba(255,255,255,0.08)"/>
+<text x="800" y="470" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="120" font-weight="700">فورت نايت</text>
+<text x="800" y="560" text-anchor="middle" fill="#ffd9dd" font-family="Arial" font-size="42">Fortnite</text>
+</svg>
