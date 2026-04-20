@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <meta charset="UTF-8" />
+  <title>لوحة الإدارة - Neostore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="admin-page">
+  <div class="admin-login" id="loginScreen">
+    <div class="admin-login-box">
+      <h1>لوحة إدارة Neostore</h1>
+      <p class="admin-top-note">تعديل الاسم، الواتساب، الانستغرام، الصور، الأقسام والمنتجات ثم تصدير JSON ورفعه إلى GitHub.</p>
+      <input id="adminPass" type="password" placeholder="رمز الدخول" />
+      <button id="loginBtn" class="btn-primary">دخول</button>
+      <div id="loginMsg" class="admin-msg"></div>
+    </div>
+  </div>
+
+  <div id="panel" class="hidden">
+    <header class="main-header">
+      <div class="logo-area">
+        <a href="index.html" class="logo-link">
+          <img src="assets/logo.png" alt="شعار Neostore" class="logo-img" />
+          <span class="logo-text">إدارة Neostore</span>
+        </a>
+      </div>
+      <div class="header-actions">
+        <a href="index.html" class="btn-secondary">عرض الموقع</a>
+        <button id="exportBtn" class="btn-primary">تصدير JSON</button>
+        <button id="importBtn" class="btn-secondary">استيراد JSON</button>
+        <input id="importFile" type="file" accept=".json,application/json" class="hidden">
+      </div>
+    </header>
+
+    <main class="container admin-wrap">
+      <section class="admin-card">
+        <h2>إعدادات المتجر</h2>
+        <div class="admin-grid">
+          <label>اسم المتجر<input id="storeNameInput" type="text"></label>
+          <label>عنوان الترحيب<input id="heroTitleInput" type="text"></label>
+          <label>وصف الترحيب<textarea id="heroDescInput" rows="3"></textarea></label>
+          <label>رابط/مسار الشعار<input id="logoInput" type="text"></label>
+          <label>رابط إنستغرام<input id="instagramInput" type="text"></label>
+          <label>رقم واتساب بدون +<input id="whatsappInput" type="text"></label>
+          <label>رمز الدخول<input id="adminCodeInput" type="text"></label>
+        </div>
+        <div class="row-actions" style="margin-top:12px"><button id="saveSettingsBtn" class="btn-primary">حفظ الإعدادات</button></div>
+      </section>
+
+      <section class="admin-card">
+        <h2>الأقسام</h2>
+        <div class="admin-grid">
+          <label>Key القسم<input id="catKeyInput" type="text" placeholder="cards"></label>
+          <label>الاسم عربي<input id="catNameArInput" type="text"></label>
+          <label>الاسم إنجليزي<input id="catNameEnInput" type="text"></label>
+          <label>صورة البانر<input id="catBannerInput" type="text" placeholder="assets/cat_cards.png"></label>
+          <label>مفعل؟
+            <select id="catActiveInput"><option value="1">نعم</option><option value="0">لا</option></select>
+          </label>
+        </div>
+        <div class="row-actions" style="margin-top:12px"><button id="saveCategoryBtn" class="btn-primary">حفظ القسم</button></div>
+        <div id="categoriesList" class="admin-list"></div>
+      </section>
+
+      <section class="admin-card">
+        <h2>المنتجات</h2>
+        <div class="admin-grid">
+          <label>القسم
+            <select id="productCategoryInput"></select>
+          </label>
+          <label>ID المنتج<input id="productIdInput" type="text"></label>
+          <label>الاسم عربي<input id="productNameArInput" type="text"></label>
+          <label>الاسم إنجليزي<input id="productNameEnInput" type="text"></label>
+          <label>السعر<input id="productPriceInput" type="number" step="0.001"></label>
+          <label>سعر العرض<input id="productDiscountInput" type="number" step="0.001"></label>
+          <label>الحالة
+            <select id="productStatusInput"><option value="new">new</option><option value="sale">sale</option><option value="soldout">soldout</option><option value="">عادي</option></select>
+          </label>
+          <label>الصورة أو الصور (استخدم | بين الصور)<input id="productImageInput" type="text" placeholder="assets/prod_xbox.png"></label>
+          <label>الوصف القصير عربي<input id="productShortArInput" type="text"></label>
+          <label>الوصف القصير إنجليزي<input id="productShortEnInput" type="text"></label>
+          <label>الوصف الطويل عربي<textarea id="productLongArInput" rows="5"></textarea></label>
+          <label>الوصف الطويل إنجليزي<textarea id="productLongEnInput" rows="5"></textarea></label>
+          <label>المنصة<input id="productPlatformInput" type="text"></label>
+          <label>خيارات السعر<input id="productOptionsInput" type="text" placeholder="10$:4.5|20$:8.5"></label>
+          <label>مفعل؟
+            <select id="productActiveInput"><option value="1">نعم</option><option value="0">لا</option></select>
+          </label>
+        </div>
+        <div class="row-actions" style="margin-top:12px"><button id="saveProductBtn" class="btn-primary">حفظ المنتج</button></div>
+        <div id="productsList" class="admin-list"></div>
+      </section>
+    </main>
+  </div>
+  <script src="js/admin.js"></script>
+</body>
+</html>

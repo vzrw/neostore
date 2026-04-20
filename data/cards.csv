@@ -1,0 +1,23 @@
+﻿id,name_ar,name_en,price_omr,discount_price_omr,status,images,short_desc_ar,short_desc_en,long_desc_ar,long_desc_en,platform,active,options
+card7,اشتراكات chatGPT,chatgpt plus ,8,2,sale,prod_gpt.png,,product is a digital code you use in your personal accouny,"📌 تعليمات كل خيار من خيارات الاشتراك
+
+1️⃣ chatGPT Plus  حساب جاهز
+• يتم تسليمك إيميل وكلمة مرور لحساب جاهز
+• الحساب مفعل عليه اشتراك ChatGPT Plus وجاهز للاستخدام مباشرة
+
+2️⃣ chatGPT Business Plus على ايميلك (اشتراك او تجديد)
+• ترسل لنا الإيميل المسجل في ChatGPT
+• نرسل لك دعوة الانضمام لاشتراك Business على الإيميل
+• تقوم بقبول الدعوة من الإيميل
+• بعدها تحصل على مساحة Business Plus بجميع مميزات الاشتراك
+
+3️⃣ chatGPT chatGPT Plus   على حسابك الشخصي (اشتراك او تجديد)
+• ترسل لنا إيميل وكلمة المرور لحساب ChatGPT
+• نقوم بتجديد الاشتراك لك
+• بعد الانتهاء يمكنك تغيير كلمة المرور واستخدام الحساب بشكل طبيعي",,chatgpt,1,حساب chatGPT Plus (حساب جاهز):1|شحن chatGPT Business Plus على ايميلك:2|شحن chatGPT Plus على حسابك الشخصي:4
+card1,بطاقة ستيم,Steam Wallet,4.5,,new,prod_steam.png,رصيد ستيم لشحن الألعاب.,Steam balance for games.,بطاقة ستيم لشحن حسابك وشراء الألعاب والإضافات من متجر Steam.,Steam Wallet to top up your Steam account and buy games and add-ons.,Steam,1,10$:4.5|20$:8.5|50$:20.5
+card2,بطاقة بلايستيشن,PlayStation Store,4.5,,new,prod_psn.png,رصيد بلايستيشن لشراء الألعاب.,PlayStation credit for games.,بطاقة بلايستيشن ستور لشحن محفظتك وشراء الألعاب والاشتراكات مثل PS Plus.,PlayStation Store card to top up your wallet and buy games and subscriptions like PS Plus.,PlayStation,1,10$:4.5|20$:8.5|50$:20.5
+card3,بطاقة إكس بوكس,Xbox Gift Card,4.5,,new,prod_xbox.png,رصيد Xbox للألعاب.,Xbox balance for games.,بطاقة إكس بوكس لشحن حسابك وشراء الألعاب والاشتراكات من Microsoft Store و Xbox.,Xbox gift card to top up your account and buy games and subscriptions from Microsoft Store and Xbox.,Xbox,1,10$:4.5|20$:8.5|50$:20.5
+card4,بطاقة جوجل بلاي,Google Play,4.5,,new,prod_gplay.png,رصيد Google Play للتطبيقات والألعاب.,Google Play credit for apps and games.,بطاقة جوجل بلاي لشراء التطبيقات والألعاب والاشتراكات من متجر Google Play.,"Google Play card to buy apps, games and subscriptions from Google Play Store.",GooglePlay,1,10$:4.5|20$:8.5|50$:20.5
+card5,بطاقة أبل,Apple Gift Card,4.5,,new,prod_apple.png,رصيد Apple للتطبيقات والاشتراكات.,Apple credit for apps and subscriptions.,"بطاقة أبل لشراء التطبيقات، الألعاب والاشتراكات من App Store.","Apple gift card to buy apps, games and subscriptions from the App Store.",Apple,1,10$:4.5|20$:8.5|50$:20.5
+card6,بطاقة أمازون,Amazon Gift Card,4.5,,new,prod_amazon.png,رصيد Amazon للشراء الرقمي.,Amazon credit for digital purchases.,بطاقة أمازون لشراء المنتجات الرقمية والأكواد من متجر Amazon.,Amazon gift card to buy digital items and codes from Amazon.,Amazon,1,10$:4.5|20$:8.5|50$:20.5

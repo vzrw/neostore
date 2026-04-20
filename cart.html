@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <meta charset="UTF-8" />
+  <title>السلة - متجر Neostore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo-area">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo.png" alt="شعار متجر Neostore" class="logo-img" />
+        <span class="logo-text">متجر Neostore</span>
+      </a>
+    </div>
+
+    <div class="header-actions">
+      <button class="lang-toggle" data-lang="ar">العربية</button>
+      <button class="lang-toggle" data-lang="en">EN</button>
+
+      <a href="https://wa.me/96894390492" target="_blank" class="whatsapp-btn">
+        تواصل واتساب
+      </a>
+
+      <a href="https://instagram.com/neostore.om" target="_blank" class="instagram-btn">
+        انستغرام
+      </a>
+
+      <a href="cart.html" class="cart-link">
+        🛒 <span id="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container cart-section">
+    <div id="cart-items"></div>
+
+    <p id="cart-empty" class="empty-text" style="display:none;">
+      سلة التسوق فارغة
+    </p>
+
+    <div id="cart-summary" class="cart-summary" style="display:none;">
+      <div class="cart-total-row">
+        <span>المجموع</span>
+        <strong id="cart-total">0.000 ر.ع</strong>
+      </div>
+
+      <div class="terms-box">
+        <label class="terms-label">
+          <input type="checkbox" id="agreeTerms">
+          لقد قرأت وصف المنتج والشروط والأحكام وأوافق عليها قبل إتمام الشراء
+        </label>
+
+        <div id="agreementError" style="display:none; margin-top:8px; color:#f97373;">
+          يجب الموافقة على الشروط قبل إتمام الطلب
+        </div>
+      </div>
+
+      <button id="checkout-btn" class="btn-primary">
+        إتمام الطلب عبر واتساب
+      </button>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <p>© <span id="year"></span> متجر Neostore</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

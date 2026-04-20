@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <meta charset="UTF-8" />
+  <title>الأقسام - متجر Neostore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo-area">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo.png" alt="شعار متجر Neostore" class="logo-img" />
+        <span class="logo-text">متجر Neostore</span>
+      </a>
+    </div>
+    <div class="header-actions">
+      <input id="search-input" type="search" placeholder="بحث عن منتج..." class="search-input" />
+
+      <button class="lang-toggle" data-lang="ar">العربية</button>
+      <button class="lang-toggle" data-lang="en">EN</button>
+
+      <a href="https://wa.me/96894390492" target="_blank" class="whatsapp-btn">
+        تواصل واتساب
+      </a>
+
+      <a href="https://instagram.com/neostore.om" target="_blank" class="instagram-btn">
+        انستغرام
+      </a>
+
+      <a href="cart.html" class="cart-link">
+        🛒 <span id="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="category-header">
+      <img id="category-banner" class="category-banner" alt="صورة القسم" />
+      <h1 id="category-title"></h1>
+    </section>
+
+    <section class="products-section">
+      <div id="products-grid" class="products-grid"></div>
+      <p id="no-products" class="empty-text" style="display:none;">
+        لا توجد منتجات في هذا القسم حالياً.
+      </p>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p>© <span id="year"></span> متجر Neostore</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+  <!-- OPTION MODAL -->
+  <div id="optionModal" class="modal-overlay" style="display:none;">
+    <div class="modal-box">
+      <h3 id="optionModalTitle" class="modal-title"></h3>
+      <div id="optionModalOptions" class="modal-options"></div>
+
+      <!-- نفس كلاس أزرار الكروت عشان الهوفر يشتغل مثل الموقع -->
+      <div class="product-card-actions">
+        <button id="optionModalCancel" class="btn-secondary">إلغاء</button>
+        <button id="optionModalConfirm" class="btn-primary">تأكيد</button>
+      </div>
+    </div>
+  </div>
+  <div id="toast" class="toast">
+    تمت إضافة المنتج للسلة 🛒
+  </div>  
+</body>
+</html>
