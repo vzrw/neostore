@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neostore</title>
+<link rel="icon" href="assets/logo.svg">
+<style>
+:root{
+  --bg:#070707;--bg2:#140707;--card:#121212;--card2:#181818;--line:#4e1111;--line2:#8b1616;
+  --accent:#d90429;--accent2:#ff3355;--text:#fff7f7;--muted:#d3b9b9;--ok:#22c55e;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(circle at top,#250707 0,#070707 35%,#050505 100%);color:var(--text)}
+a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
+.container{width:min(1200px,100%);margin:auto;padding:16px}
+.main-header{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:14px 18px;background:linear-gradient(90deg,#090909,#220707);border-bottom:1px solid var(--line)}
+.logo-area,.logo-link,.header-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.logo-img{width:42px;height:42px;border-radius:14px;border:1px solid var(--line2);background:#111}
+.logo-text{font-weight:800}
+.btn,.btn-primary,.btn-secondary,.pill,.whatsapp-btn,.instagram-btn,.cart-link,.lang-toggle{display:inline-flex;align-items:center;justify-content:center;border:none;border-radius:999px;padding:.6rem .95rem;cursor:pointer;transition:.16s transform,.16s opacity}
+.btn:hover,.btn-primary:hover,.btn-secondary:hover,.pill:hover,.whatsapp-btn:hover,.instagram-btn:hover,.cart-link:hover,.lang-toggle:hover{transform:translateY(-2px)}
+.btn-secondary,.pill,.cart-link,.lang-toggle{background:#111;border:1px solid var(--line);color:var(--text)}
+.btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff}
+.whatsapp-btn{background:#15351d;border:1px solid #2c7a3d;color:#effff3}
+.instagram-btn{background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);color:#fff}
+.hero{margin-top:18px;padding:28px;border-radius:24px;background:radial-gradient(circle at top right,#3b0909 0,#101010 60%);border:1px solid var(--line2);box-shadow:0 16px 40px rgba(0,0,0,.3)}
+.hero h1{margin:0 0 8px;font-size:clamp(1.4rem,3vw,2rem)}.hero p{margin:0;color:var(--muted)}
+.section-title{margin:22px 0 14px;font-size:1.45rem}
+.categories-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.category-card{background:linear-gradient(180deg,#111,#0d0d0d);border:1px solid var(--line);border-radius:20px;overflow:hidden;cursor:pointer;box-shadow:0 10px 25px rgba(0,0,0,.25)}
+.category-banner-wrap{aspect-ratio:16/9;background:#0d0d0d}.category-banner{width:100%;height:100%;object-fit:cover}
+.category-body{padding:12px 14px 16px}.category-title{font-weight:800}.category-sub{color:var(--muted);font-size:.9rem;margin-top:4px}
+.search-input,.input,textarea,select{width:100%;background:#111;border:1px solid var(--line);color:var(--text);border-radius:14px;padding:12px}
+.products-grid{display:grid;gap:16px;justify-content:center}
+@media(min-width:800px){.products-grid{grid-template-columns:repeat(auto-fit,minmax(200px,230px));}}
+@media(max-width:799px){.products-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+.product-card{background:linear-gradient(180deg,#111,#0d0d0d);border:1px solid #291111;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer}
+.product-img-wrap{position:relative;aspect-ratio:3/4;background:#0d0d0d;display:flex;align-items:center;justify-content:center}
+.product-img-wrap img{max-width:100%;max-height:100%;object-fit:contain}
+.badge{position:absolute;top:8px;left:8px;background:var(--accent);padding:3px 8px;border-radius:999px;font-size:.72rem;color:#fff}
+.badge.sale{background:#f97316}.badge.soldout{background:#666}
+.product-body{padding:10px 12px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.product-name{font-weight:700;font-size:.95rem}.product-short{font-size:.8rem;color:var(--muted);min-height:32px}
+.price-row{display:flex;align-items:baseline;gap:8px}.price{font-weight:800}.old-price{font-size:.82rem;color:#bfa9a9;text-decoration:line-through}
+.actions{display:flex;gap:8px;margin-top:auto}.actions .btn-primary,.actions .btn-secondary{flex:1;padding:.48rem .65rem;font-size:.8rem}
+.page-card{background:#111;border:1px solid var(--line);border-radius:22px;padding:14px}
+.product-layout{display:grid;gap:18px;margin-top:20px}@media(min-width:880px){.product-layout{grid-template-columns:1fr 1.1fr}}
+.main-image{aspect-ratio:3/4;background:#0d0d0d;border:1px solid #241111;border-radius:18px;display:flex;align-items:center;justify-content:center}
+.main-image img{max-width:100%;max-height:100%;object-fit:contain}
+.thumbs{display:flex;gap:8px;overflow:auto;margin-top:10px}.thumbs img{width:62px;height:62px;object-fit:cover;border-radius:12px;border:1px solid #241111;cursor:pointer}.thumbs img.active{border-color:var(--accent2)}
+.long.collapsed{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.option-box{margin:.7rem 0;padding:10px 12px;background:#121212;border:1px solid var(--line);border-radius:16px}
+.option-line{display:flex;gap:8px;align-items:center;margin-top:8px}
+.qty{width:80px;text-align:center;background:#111;border:1px solid var(--line);color:#fff;border-radius:999px;padding:.6rem .7rem}
+.cart-item{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid #241111}
+.cart-left{display:flex;gap:12px;align-items:center;flex:1}.cart-thumb{width:64px;height:64px;background:#0e0e0e;border:1px solid #241111;border-radius:12px;display:flex;align-items:center;justify-content:center}.cart-thumb img{max-width:100%;max-height:100%;object-fit:contain}
+.cart-meta,.small,.muted{color:var(--muted);font-size:.84rem}
+.summary{margin-top:18px;padding-top:14px;border-top:1px solid #241111}.total-row{display:flex;justify-content:space-between;margin-bottom:12px;font-weight:800}
+.empty{text-align:center;color:var(--muted);padding:28px 0}.hidden{display:none!important}
+.footer{margin-top:28px;padding:18px;text-align:center;color:#9d7e7e;border-top:1px solid #241111}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:50}.modal-box{width:min(430px,calc(100% - 20px));background:#111;border:1px solid var(--line2);border-radius:18px;padding:18px}
+.admin-page{background:#060606}.admin-gate{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+.login-card,.admin-card{background:#111;border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 18px 45px rgba(0,0,0,.35)}
+.login-card{width:min(430px,100%);text-align:center}.login-card img{width:84px;margin:0 auto 10px}
+.admin-wrap{display:grid;gap:16px;margin-top:16px}.admin-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.admin-list{display:grid;gap:10px;margin-top:12px}.admin-item{background:#121212;border:1px solid #251010;border-radius:16px;padding:12px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.row-actions{display:flex;gap:8px;flex-wrap:wrap}
+.file-note{font-size:.78rem;color:#cfb4b4}
+@media(max-width:700px){.main-header{flex-direction:column}.header-actions{justify-content:center}}
+</style>
+</head>
+<body>
+
+<header class="main-header">
+  <div class="logo-area">
+    <a class="logo-link" href="index.html">
+      <img class="logo-img" src="assets/logo.svg" alt="logo">
+      <span class="logo-text">متجر <span data-brand>Neostore</span></span>
+    </a>
+  </div>
+  <div class="header-actions">
+    <a id="whatsappBtn" class="whatsapp-btn" target="_blank">تواصل واتساب</a>
+    <a id="instagramBtn" class="instagram-btn" target="_blank">انستغرام</a>
+    <a href="cart.html" class="cart-link">🛒 <span data-cart-count>0</span></a>
+  </div>
+</header>
+
+<main class="container">
+  <div class="header-actions" style="justify-content:flex-start;padding:0 0 12px">
+    <input id="searchInput" class="search-input" placeholder="بحث عن منتج...">
+  </div>
+  <section class="category-banner-wrap page-card"><img id="categoryBanner" class="category-banner" alt=""></section>
+  <h1 id="categoryTitle" class="section-title"></h1>
+  <section id="productsGrid" class="products-grid"></section>
+  <div id="emptyProducts" class="empty hidden">لا توجد منتجات</div>
+</main>
+<footer class="footer">© <span id="year"></span> <span data-brand>Neostore</span></footer>
+<div id="optionModal" class="modal"><div class="modal-box">
+  <h3 id="optionTitle" style="margin-top:0"></h3>
+  <div id="optionList"></div>
+  <div class="row-actions" style="margin-top:14px">
+    <button id="optionCancel" class="btn-secondary">إلغاء</button>
+    <button id="optionConfirm" class="btn-primary">تأكيد</button>
+  </div>
+</div></div>
+
+<script>
+const DEFAULT_SITE_DATA = {"settings": {"storeName": "Neostore", "heroTitle": "متجر Neostore للألعاب والتقنية", "heroDesc": "ستايل فاخر بالأسود والأحمر، ألعاب رقمية وشحن واشتراكات مع طلب عبر واتساب.", "instagramUrl": "https://instagram.com/neostore.om", "whatsappPhone": "96894390492", "adminCode": "123456", "currency": "ر.ع"}, "categories": [{"key": "pc_games", "name_ar": "العاب البيسي", "name_en": "PC Games", "banner_image": "assets/pc-banner.svg", "active": true}, {"key": "playstation", "name_ar": "العاب سوني", "name_en": "PlayStation Games", "banner_image": "assets/ps-banner.svg", "active": true}, {"key": "cards", "name_ar": "شحن واشتراكات", "name_en": "Cards & Subscriptions", "banner_image": "assets/cards-banner.svg", "active": true}, {"key": "fortnite", "name_ar": "فورت نايت", "name_en": "Fortnite", "banner_image": "assets/fortnite-banner.svg", "active": true}], "products": {"pc_games": [{"id": "pc1", "name_ar": "Resident Evil Requiem", "name_en": "Resident Evil Requiem", "images": ["assets/resident-evil.svg"], "price": 2.5, "oldPrice": 0, "shortDesc": "نسخة رقمية للحاسب", "longDesc": "نسخة رقمية للحاسب مع تسليم سريع ودعم فني عبر واتساب.", "status": "sale", "options": [], "active": true}, {"id": "pc2", "name_ar": "Crimson Desert", "name_en": "Crimson Desert", "images": ["assets/crimson-desert.svg"], "price": 3.0, "oldPrice": 0, "shortDesc": "مغامرة وأكشن للحاسب", "longDesc": "منتج تجريبي قابل للتعديل من لوحة التحكم.", "status": "new", "options": [], "active": true}], "playstation": [{"id": "ps1", "name_ar": "FC 25 PS5", "name_en": "FC 25 PS5", "images": ["assets/fc25-ps.svg"], "price": 15.9, "oldPrice": 17.9, "shortDesc": "نسخة بلايستيشن 5", "longDesc": "منتج تجريبي مع خصم ظاهر في الصفحة.", "status": "sale", "options": [], "active": true}, {"id": "ps2", "name_ar": "PS Plus", "name_en": "PS Plus", "images": ["assets/ps-plus.svg"], "price": 9.5, "oldPrice": 0, "shortDesc": "اشتراك بلايستيشن", "longDesc": "يمكنك وضع أكثر من خيار سعر من لوحة التحكم.", "status": "", "options": [{"label": "أساسي", "price": 9.5}, {"label": "إكسترا", "price": 12.5}], "active": true}], "cards": [{"id": "c1", "name_ar": "بطاقة اكس بوكس", "name_en": "Xbox Card", "images": ["assets/xbox-card.svg"], "price": 4.5, "oldPrice": 0, "shortDesc": "شحن متجر اكس بوكس", "longDesc": "بطاقة رقمية فورية.", "status": "new", "options": [{"label": "5 OMR", "price": 4.5}, {"label": "10 OMR", "price": 8.9}], "active": true}, {"id": "c2", "name_ar": "بطاقة ستيم", "name_en": "Steam Card", "images": ["assets/steam-card.svg"], "price": 4.5, "oldPrice": 0, "shortDesc": "شحن متجر ستيم", "longDesc": "رصيد رقمي للألعاب.", "status": "", "options": [], "active": true}, {"id": "c3", "name_ar": "اشتراك ChatGPT Plus", "name_en": "ChatGPT Plus", "images": ["assets/chatgpt-card.svg"], "price": 1.0, "oldPrice": 0, "shortDesc": "اشتراك شهر واحد", "longDesc": "منتج رقمي قابل للتعديل.", "status": "sale", "options": [], "active": true}], "fortnite": [{"id": "f1", "name_ar": "شحن V-Bucks", "name_en": "V-Bucks", "images": ["assets/vbucks.svg"], "price": 7.5, "oldPrice": 0, "shortDesc": "شحن فورت نايت", "longDesc": "منتج تجريبي لفورت نايت.", "status": "new", "options": [{"label": "1000 V-Bucks", "price": 7.5}, {"label": "2800 V-Bucks", "price": 18.9}], "active": true}]}};
+const SITE_KEY = 'neostore_site_data_v2';
+const CART_KEY = 'neostore_cart_v2';
+
+function clone(obj) { return JSON.parse(JSON.stringify(obj)); }
+
+async function loadSite() {
+  try {
+    const res = await fetch('site-data.json?v=' + Date.now());
+    if (res.ok) {
+      const json = await res.json();
+      return json && typeof json === 'object' ? json : clone(DEFAULT_SITE_DATA);
+    }
+  } catch (e) {}
+  try {
+    const raw = localStorage.getItem(SITE_KEY);
+    if (!raw) return clone(DEFAULT_SITE_DATA);
+    const parsed = JSON.parse(raw);
+    return parsed && typeof parsed === 'object' ? parsed : clone(DEFAULT_SITE_DATA);
+  } catch (e) {
+    return clone(DEFAULT_SITE_DATA);
+  }
+}
+function saveSite(data) {
+  localStorage.setItem(SITE_KEY, JSON.stringify(data));
+}
+function loadCart() {
+  try { return JSON.parse(localStorage.getItem(CART_KEY) || '[]'); } catch (e) { return []; }
+}
+function saveCart(cart) {
+  localStorage.setItem(CART_KEY, JSON.stringify(cart));
+  updateCartCount();
+}
+function fmt(num, site) {
+  const n = Number(num || 0);
+  return n.toFixed(3) + ' ' + ((site && site.settings && site.settings.currency) || 'ر.ع');
+}
+function updateCartCount() {
+  const count = loadCart().reduce((s, i) => s + Number(i.qty || 0), 0);
+  document.querySelectorAll('[data-cart-count]').forEach(el => el.textContent = count);
+}
+function getParam(name) {
+  return new URL(location.href).searchParams.get(name);
+}
+function productImages(product) {
+  const imgs = Array.isArray(product.images) ? product.images : [];
+  return imgs.filter(Boolean);
+}
+function productOptions(product) {
+  return Array.isArray(product.options) ? product.options.filter(Boolean) : [];
+}
+function basePrice(product) {
+  const options = productOptions(product);
+  if (options.length) return Number(options[0].price || 0);
+  return Number(product.price || 0);
+}
+function statusText(status) {
+  return status === 'new' ? 'جديد' : status === 'sale' ? 'عرض' : status === 'soldout' ? 'نفدت' : '';
+}
+function escapeHtml(str) {
+  return String(str ?? '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+function setCommon(site) {
+  document.title = site.settings.storeName || 'Neostore';
+  document.querySelectorAll('[data-brand]').forEach(el => el.textContent = site.settings.storeName || 'Neostore');
+  const wa = document.getElementById('whatsappBtn');
+  if (wa) wa.href = 'https://api.whatsapp.com/send?phone=' + String(site.settings.whatsappPhone || '').replace(/\D/g, '');
+  const ig = document.getElementById('instagramBtn');
+  if (ig) ig.href = site.settings.instagramUrl || '#';
+  const heroTitle = document.getElementById('heroTitle');
+  if (heroTitle) heroTitle.textContent = site.settings.heroTitle || '';
+  const heroDesc = document.getElementById('heroDesc');
+  if (heroDesc) heroDesc.textContent = site.settings.heroDesc || '';
+  const year = document.getElementById('year');
+  if (year) year.textContent = new Date().getFullYear();
+  updateCartCount();
+}
+function toast(text) {
+  let t = document.getElementById('toast');
+  if (!t) {
+    t = document.createElement('div');
+    t.id = 'toast';
+    t.style.cssText = 'position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#111;border:1px solid var(--line2);padding:10px 16px;border-radius:999px;z-index:60;display:none';
+    document.body.appendChild(t);
+  }
+  t.textContent = text;
+  t.style.display = 'block';
+  clearTimeout(t._x);
+  t._x = setTimeout(() => t.style.display = 'none', 1800);
+}
+function addToCart(product, qty, catKey, chosenOption, site) {
+  const cart = loadCart();
+  const optionLabel = chosenOption ? chosenOption.label : '';
+  const unitPrice = chosenOption ? Number(chosenOption.price || 0) : Number(product.price || 0);
+  const key = catKey + '__' + product.id + '__' + optionLabel;
+  const existing = cart.find(i => i.key === key);
+  if (existing) existing.qty += qty;
+  else cart.push({
+    key,
+    id: product.id,
+    cat: catKey,
+    name: product.name_ar,
+    option: optionLabel,
+    price: unitPrice,
+    qty,
+    image: productImages(product)[0] || ''
+  });
+  saveCart(cart);
+  toast('تمت إضافة المنتج للسلة');
+}
+function buildWhatsAppOrder(site, cart, total) {
+  let msg = (site.settings.storeName || 'Neostore') + '\n---------------\nتفاصيل الطلب:\n\n';
+  cart.forEach(item => {
+    const line = Number(item.price || 0) * Number(item.qty || 0);
+    msg += '- ' + item.name + (item.option ? ' - ' + item.option : '') + ' x' + item.qty + ' = ' + fmt(line, site) + '\n';
+  });
+  msg += '\nالمجموع النهائي: ' + fmt(total, site);
+  return 'https://api.whatsapp.com/send?phone=' + String(site.settings.whatsappPhone || '').replace(/\D/g, '') + '&text=' + encodeURIComponent(msg);
+}
+
+
+(async function(){
+const site = await loadSite();
+setCommon(site);
+const key = getParam('key');
+const cat = (site.categories || []).find(c => c.key === key);
+if (cat) {
+  document.getElementById('categoryTitle').textContent = cat.name_ar;
+  document.getElementById('categoryBanner').src = cat.banner_image;
+}
+const allProducts = ((site.products || {})[key] || []).filter(p => p.active !== false);
+const grid = document.getElementById('productsGrid');
+const empty = document.getElementById('emptyProducts');
+let modalProduct = null;
+let modalAction = 'cart';
+
+function openOptionModal(product, action) {
+  modalProduct = product;
+  modalAction = action;
+  document.getElementById('optionTitle').textContent = product.name_ar || '';
+  const list = document.getElementById('optionList');
+  list.innerHTML = '';
+  productOptions(product).forEach((opt, idx) => {
+    const line = document.createElement('label');
+    line.className = 'option-line';
+    line.innerHTML = `<input type="radio" name="modalOption" value="${escapeHtml(opt.label)}" ${idx === 0 ? 'checked' : ''}> <span>${escapeHtml(opt.label)} - ${fmt(opt.price, site)}</span>`;
+    list.appendChild(line);
+  });
+  document.getElementById('optionModal').style.display = 'flex';
+}
+function getChosenOption(product) {
+  const picked = document.querySelector('input[name="modalOption"]:checked');
+  const label = picked ? picked.value : '';
+  return productOptions(product).find(o => o.label === label) || productOptions(product)[0] || null;
+}
+function renderGrid(list) {
+  grid.innerHTML = '';
+  if (!list.length) {
+    empty.classList.remove('hidden');
+    return;
+  }
+  empty.classList.add('hidden');
+  list.forEach(product => {
+    const card = document.createElement('div');
+    card.className = 'product-card';
+    card.onclick = () => location.href = 'product.html?cat=' + encodeURIComponent(key) + '&id=' + encodeURIComponent(product.id);
+    const imgs = productImages(product);
+    const opts = productOptions(product);
+    const price = opts.length ? opts[0].price : Number(product.price || 0);
+    const old = Number(product.oldPrice || 0);
+    card.innerHTML = `
+      <div class="product-img-wrap">
+        <img src="${escapeHtml(imgs[0] || '')}" alt="">
+        ${product.status ? `<div class="badge ${product.status==='sale'?'sale':product.status}">${escapeHtml(statusText(product.status))}</div>` : ''}
+      </div>
+      <div class="product-body">
+        <div class="product-name">${escapeHtml(product.name_ar)}</div>
+        <div class="price-row"><span class="price">${fmt(price, site)}</span>${old ? `<span class="old-price">${fmt(old, site)}</span>` : ''}</div>
+        <div class="product-short">${escapeHtml(product.shortDesc || '')}</div>
+        <div class="actions">
+          <button class="btn-primary">شراء الآن</button>
+          <button class="btn-secondary">إضافة للسلة</button>
+        </div>
+      </div>`;
+    const buttons = card.querySelectorAll('button');
+    buttons[0].onclick = (e) => {
+      e.stopPropagation();
+      if (opts.length) openOptionModal(product, 'buy');
+      else { addToCart(product, 1, key, null, site); location.href = 'cart.html'; }
+    };
+    buttons[1].onclick = (e) => {
+      e.stopPropagation();
+      if (opts.length) openOptionModal(product, 'cart');
+      else addToCart(product, 1, key, null, site);
+    };
+    grid.appendChild(card);
+  });
+}
+
+document.getElementById('confirmOptionBtn').onclick = function() {
+  if (!modalProduct) return;
+  const chosen = getChosenOption(modalProduct);
+  addToCart(modalProduct, 1, key, chosen, site);
+  document.getElementById('optionModal').style.display = 'none';
+  if (modalAction === 'buy') location.href = 'cart.html';
+};
+document.getElementById('closeOptionBtn').onclick = () => document.getElementById('optionModal').style.display = 'none';
+document.getElementById('searchInput').addEventListener('input', function(){
+  const q = this.value.trim().toLowerCase();
+  const filtered = allProducts.filter(p => String(p.name_ar || '').toLowerCase().includes(q) || String(p.name_en || '').toLowerCase().includes(q));
+  renderGrid(filtered);
+});
+renderGrid(allProducts);
+})();</script>
+</body>
+</html>
