@@ -34,7 +34,24 @@
   ],
   "products": {
     "fortnite": [],
-    "pc_games": [],
+    "pc_games": [
+      {
+        "id": "offline1",
+        "name_ar": "Elden ring",
+        "name_en": "Elden ring",
+        "price_omr": "20",
+        "discount_price_omr": "2.7",
+        "status": "new",
+        "images": "assets/elden.jpg",
+        "short_desc_ar": "offline",
+        "short_desc_en": "",
+        "long_desc_ar": "لعبه اوفلاين",
+        "long_desc_en": "",
+        "platform": "PC/Steam",
+        "active": "1",
+        "options": "منصه ستيم:2.7"
+      }
+    ],
     "cards": [
       {
         "id": "card1",
