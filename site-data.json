@@ -2,7 +2,7 @@
   "settings": {
     "storeName": "Neostore",
     "heroTitle": "مرحباً بك في متجر Neostore",
-    "heroDesc": "اختر القسم المناسب وتصفح المنتجات",
+    "heroDesc": "اختر القسم وتصفح المنتجات",
     "instagramUrl": "https://instagram.com/neostore.om",
     "whatsappPhone": "96876969116",
     "adminCode": "123456",
@@ -11,24 +11,24 @@
   },
   "categories": [
     {
+      "key": "cards",
+      "name_ar": "شحن واشتراكات",
+      "name_en": "Cards & Subscriptions",
+      "banner_image": "assets/cat_cards.png",
+      "active": true
+    },
+    {
       "key": "fortnite",
       "name_ar": "فورت نايت",
       "name_en": "Fortnite",
-      "banner_image": "assets/cat_fortnite.jpg",
+      "banner_image": "assets/fortnite-banner.png",
       "active": true
     },
     {
       "key": "pc_games",
       "name_ar": "العاب البيسي",
       "name_en": "pc games",
-      "banner_image": "assets/cat_pc_games.png",
-      "active": true
-    },
-    {
-      "key": "cards",
-      "name_ar": "شحن واشتراكات",
-      "name_en": "Cards & Subscriptions",
-      "banner_image": "assets/cat_cards.png",
+      "banner_image": "assets/pc-banner.png",
       "active": true
     }
   ],
@@ -353,6 +353,22 @@
         "platform": "",
         "active": "",
         "options": ""
+      },
+      {
+        "id": "Neo_teset",
+        "name_ar": "ننن",
+        "name_en": "zx",
+        "price_omr": "2",
+        "discount_price_omr": "1",
+        "status": "new",
+        "images": "",
+        "short_desc_ar": "d",
+        "short_desc_en": "d",
+        "long_desc_ar": "d",
+        "long_desc_en": "d",
+        "platform": "d",
+        "active": "1",
+        "options": "2"
       }
     ],
     "pc_games": [
