@@ -32,10 +32,10 @@
       "active": true
     },
     {
-      "key": "g",
-      "name_ar": "g",
-      "name_en": "g",
-      "banner_image": "",
+      "key": "ps_games",
+      "name_ar": "العاب سوني",
+      "name_en": "PS games",
+      "banner_image": "assets/ps-banner.png",
       "active": true
     }
   ],
@@ -43,6 +43,6 @@
     "fortnite": [],
     "pc_games": [],
     "cards": [],
-    "g": []
+    "ps_games": []
   }
 }
