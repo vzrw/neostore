@@ -42,7 +42,56 @@
   "products": {
     "fortnite": [],
     "pc_games": [],
-    "cards": [],
+    "cards": [
+      {
+        "id": "card1",
+        "name_ar": "بلاستيشن بلس",
+        "name_en": "PS Plus",
+        "price_omr": "2",
+        "discount_price_omr": "",
+        "status": "new",
+        "images": "assets/Ps-plus.png",
+        "short_desc_ar": "بلاستيشن بلس",
+        "short_desc_en": "PS Plus",
+        "long_desc_ar": "بلاستيشن بلس للعب العاب sony اونلاين.",
+        "long_desc_en": "PlayStation Plus for playing Sony games online.",
+        "platform": "Sony",
+        "active": "1",
+        "options": "شهر:2|ثلاث اشهر:4|سنه:11"
+      },
+      {
+        "id": "card2",
+        "name_ar": "نتفلكس",
+        "name_en": "Netflix",
+        "price_omr": "1",
+        "discount_price_omr": "",
+        "status": "new",
+        "images": "assets/Netflix.png",
+        "short_desc_ar": "نتفلكس",
+        "short_desc_en": "Netflix",
+        "long_desc_ar": "نتفلكس ملف خاص فيك ضمان كامل المده.",
+        "long_desc_en": "Netflix has a special file for you with a full term guarantee.",
+        "platform": "",
+        "active": "1",
+        "options": "شهر:1|ثلاث اشهر:2|ست اشهر:3|سنه:4"
+      },
+      {
+        "id": "card3",
+        "name_ar": "شات جيبيتي بلس",
+        "name_en": "ChatGPT PLUS",
+        "price_omr": "8",
+        "discount_price_omr": "2.5",
+        "status": "new",
+        "images": "assets/ChatGPT.png",
+        "short_desc_ar": "شات جيبيتي بلس",
+        "short_desc_en": "ChatGPT PLUS",
+        "long_desc_ar": "🤖 ChatGPT – شهر\n• دعم GPT-4\n• تحليل صور وملفات\n• إنشاء صور بالذكاء الاصطناعي\n• كتابة وتلخيص متقدم\n• التفعيل على بريدك الإلكتروني 📧",
+        "long_desc_en": "",
+        "platform": "",
+        "active": "1",
+        "options": ""
+      }
+    ],
     "ps_games": []
   }
 }
