@@ -14,28 +14,28 @@
       "key": "fortnite",
       "name_ar": "فورت نايت",
       "name_en": "Fortnite",
-      "banner_image": "assets/fortnite-banner.png",
-      "active": true
-    },
-    {
-      "key": "cards",
-      "name_ar": "شحن البطائق والاشتراكات",
-      "name_en": "Cards & Subscriptions",
-      "banner_image": "assets/cards_sub.png",
-      "active": true
-    },
-    {
-      "key": "pc_games",
-      "name_ar": "العاب ال PC",
-      "name_en": "Pc games",
-      "banner_image": "assets/pcc-banner.png",
+      "banner_image": "assets/fort-banner.png",
       "active": true
     },
     {
       "key": "ps_games",
       "name_ar": "العاب سوني",
       "name_en": "PS games",
-      "banner_image": "assets/ps-banner.png",
+      "banner_image": "assets/psss-banner.png",
+      "active": true
+    },
+    {
+      "key": "pc_games",
+      "name_ar": "العاب ال PC",
+      "name_en": "Pc games",
+      "banner_image": "assets/pccc-banner.png",
+      "active": true
+    },
+    {
+      "key": "cards",
+      "name_ar": "شحن البطائق والاشتراكات",
+      "name_en": "Cards & Subscriptions",
+      "banner_image": "assets/cards-subb-banner.png",
       "active": true
     }
   ],
