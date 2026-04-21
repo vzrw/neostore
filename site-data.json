@@ -30,11 +30,19 @@
       "name_en": "Pc games",
       "banner_image": "assets/pcc-banner.png",
       "active": true
+    },
+    {
+      "key": "g",
+      "name_ar": "g",
+      "name_en": "g",
+      "banner_image": "",
+      "active": true
     }
   ],
   "products": {
     "fortnite": [],
     "pc_games": [],
-    "cards": []
+    "cards": [],
+    "g": []
   }
 }
