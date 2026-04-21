@@ -18,17 +18,17 @@
       "active": true
     },
     {
-      "key": "pc_games",
-      "name_ar": "العاب ال PC",
-      "name_en": "Pc games",
-      "banner_image": "assets/pc-banner.png",
-      "active": true
-    },
-    {
       "key": "cards",
       "name_ar": "شحن البطائق والاشتراكات",
       "name_en": "Cards & Subscriptions",
       "banner_image": "assets/cards_sub.png",
+      "active": true
+    },
+    {
+      "key": "pc_games",
+      "name_ar": "العاب ال PC",
+      "name_en": "Pc games",
+      "banner_image": "assets/pcc-banner.png",
       "active": true
     }
   ],
