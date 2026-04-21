@@ -35,22 +35,6 @@
   "products": {
     "fortnite": [
       {
-        "id": "crew1",
-        "name_ar": "حزمة كرو الحزمة الشهرية",
-        "name_en": "Fortnite Crew",
-        "price_omr": "5.5",
-        "discount_price_omr": "3",
-        "status": "sale",
-        "images": "prod_crew.jpg",
-        "short_desc_ar": "الحزمة الشهرية في حسابك الخاص",
-        "short_desc_en": "Monthly Fortnite Crew subscription.",
-        "long_desc_ar": "الحزمة الشهرية تشمل :\nسكن حصري \n1000 فيبوكس\n🎟 4 باسات دفعة وحدة:\nبتل باس\nباس OG\nباس Lego\nموسيقى فورتنايت باس\n\nطريقة الشحن:\n\n1. عن طريق حساب xbox يكون مربوط في حسابك \n2. عن طريق حساب ابك جيمز\n\n",
-        "long_desc_en": "Monthly subscription including exclusive skin, battle pass, and 1000 V-Bucks every month.",
-        "platform": "PC / PS / Xbox",
-        "active": "1",
-        "options": "شحن عن طريق اكسبوكس:3|شحن عن طريق ابك جيمز:3.5"
-      },
-      {
         "id": "vbucks",
         "name_ar": "شحن فيبوكس",
         "name_en": "vbucks topup",
