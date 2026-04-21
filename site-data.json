@@ -7,16 +7,9 @@
     "whatsappPhone": "96876969116",
     "adminCode": "123456",
     "currency": "ر.ع",
-    "logo": "assets/logo.png"
+    "logo": "assets/logoneo.png"
   },
   "categories": [
-    {
-      "key": "cards",
-      "name_ar": "شحن واشتراكات",
-      "name_en": "Cards & Subscriptions",
-      "banner_image": "assets/cat_cards.png",
-      "active": true
-    },
     {
       "key": "fortnite",
       "name_ar": "فورت نايت",
@@ -29,6 +22,13 @@
       "name_ar": "العاب البيسي",
       "name_en": "pc games",
       "banner_image": "assets/pc-banner.png",
+      "active": true
+    },
+    {
+      "key": "cards",
+      "name_ar": "شحن واشتراكات",
+      "name_en": "Cards & Subscriptions",
+      "banner_image": "assets/cards_sub.png",
       "active": true
     }
   ],
