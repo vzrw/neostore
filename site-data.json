@@ -2,7 +2,7 @@
   "settings": {
     "storeName": "Neostore",
     "heroTitle": "مرحباً بك في متجر Neostore",
-    "heroDesc": "اختر القسم وتصفح المنتجات",
+    "heroDesc": "تصفح الاقسام الموجوده و اطلب مباشره.",
     "instagramUrl": "https://instagram.com/neostore.om",
     "whatsappPhone": "96876969116",
     "adminCode": "96905820",
@@ -19,14 +19,14 @@
     },
     {
       "key": "pc_games",
-      "name_ar": "العاب البيسي",
-      "name_en": "pc games",
+      "name_ar": "العاب ال PC",
+      "name_en": "Pc games",
       "banner_image": "assets/pc-banner.png",
       "active": true
     },
     {
       "key": "cards",
-      "name_ar": "شحن واشتراكات",
+      "name_ar": "شحن البطائق والاشتراكات",
       "name_en": "Cards & Subscriptions",
       "banner_image": "assets/cards_sub.png",
       "active": true
@@ -34,137 +34,7 @@
   ],
   "products": {
     "fortnite": [],
-    "pc_games": [
-      {
-        "id": "offline1",
-        "name_ar": "Elden ring",
-        "name_en": "Elden ring",
-        "price_omr": "20",
-        "discount_price_omr": "2.7",
-        "status": "new",
-        "images": "assets/elden.jpg",
-        "short_desc_ar": "offline",
-        "short_desc_en": "",
-        "long_desc_ar": "لعبه اوفلاين",
-        "long_desc_en": "",
-        "platform": "PC/Steam",
-        "active": "1",
-        "options": "منصه ستيم:2.7"
-      }
-    ],
-    "cards": [
-      {
-        "id": "card1",
-        "name_ar": "بطاقة ستيم",
-        "name_en": "Steam Wallet",
-        "price_omr": "4.5",
-        "discount_price_omr": "",
-        "status": "new",
-        "images": "prod_steam.png",
-        "short_desc_ar": "رصيد ستيم لشحن الألعاب.",
-        "short_desc_en": "Steam balance for games.",
-        "long_desc_ar": "بطاقة ستيم لشحن حسابك وشراء الألعاب والإضافات من متجر Steam.",
-        "long_desc_en": "Steam Wallet to top up your Steam account and buy games and add-ons.",
-        "platform": "Steam",
-        "active": "1",
-        "options": "10$:4.5|20$:8.5|50$:20.5"
-      },
-      {
-        "id": "card2",
-        "name_ar": "بطاقة بلايستيشن",
-        "name_en": "PlayStation Store",
-        "price_omr": "4.5",
-        "discount_price_omr": "",
-        "status": "new",
-        "images": "prod_psn.png",
-        "short_desc_ar": "رصيد بلايستيشن لشراء الألعاب.",
-        "short_desc_en": "PlayStation credit for games.",
-        "long_desc_ar": "بطاقة بلايستيشن ستور لشحن محفظتك وشراء الألعاب والاشتراكات مثل PS Plus.",
-        "long_desc_en": "PlayStation Store card to top up your wallet and buy games and subscriptions like PS Plus.",
-        "platform": "PlayStation",
-        "active": "1",
-        "options": "10$:4.5|20$:8.5|50$:20.5"
-      },
-      {
-        "id": "card3",
-        "name_ar": "بطاقة إكس بوكس",
-        "name_en": "Xbox Gift Card",
-        "price_omr": "4.5",
-        "discount_price_omr": "",
-        "status": "new",
-        "images": "prod_xbox.png",
-        "short_desc_ar": "رصيد Xbox للألعاب.",
-        "short_desc_en": "Xbox balance for games.",
-        "long_desc_ar": "بطاقة إكس بوكس لشحن حسابك وشراء الألعاب والاشتراكات من Microsoft Store و Xbox.",
-        "long_desc_en": "Xbox gift card to top up your account and buy games and subscriptions from Microsoft Store and Xbox.",
-        "platform": "Xbox",
-        "active": "1",
-        "options": "10$:4.5|20$:8.5|50$:20.5"
-      },
-      {
-        "id": "card4",
-        "name_ar": "بطاقة جوجل بلاي",
-        "name_en": "Google Play",
-        "price_omr": "4.5",
-        "discount_price_omr": "",
-        "status": "new",
-        "images": "prod_gplay.png",
-        "short_desc_ar": "رصيد Google Play للتطبيقات والألعاب.",
-        "short_desc_en": "Google Play credit for apps and games.",
-        "long_desc_ar": "بطاقة جوجل بلاي لشراء التطبيقات والألعاب والاشتراكات من متجر Google Play.",
-        "long_desc_en": "Google Play card to buy apps, games and subscriptions from Google Play Store.",
-        "platform": "GooglePlay",
-        "active": "1",
-        "options": "10$:4.5|20$:8.5|50$:20.5"
-      },
-      {
-        "id": "card5",
-        "name_ar": "بطاقة أبل",
-        "name_en": "Apple Gift Card",
-        "price_omr": "4.5",
-        "discount_price_omr": "",
-        "status": "new",
-        "images": "prod_apple.png",
-        "short_desc_ar": "رصيد Apple للتطبيقات والاشتراكات.",
-        "short_desc_en": "Apple credit for apps and subscriptions.",
-        "long_desc_ar": "بطاقة أبل لشراء التطبيقات، الألعاب والاشتراكات من App Store.",
-        "long_desc_en": "Apple gift card to buy apps, games and subscriptions from the App Store.",
-        "platform": "Apple",
-        "active": "1",
-        "options": "10$:4.5|20$:8.5|50$:20.5"
-      },
-      {
-        "id": "card6",
-        "name_ar": "بطاقة أمازون",
-        "name_en": "Amazon Gift Card",
-        "price_omr": "4.5",
-        "discount_price_omr": "",
-        "status": "new",
-        "images": "prod_amazon.png",
-        "short_desc_ar": "رصيد Amazon للشراء الرقمي.",
-        "short_desc_en": "Amazon credit for digital purchases.",
-        "long_desc_ar": "بطاقة أمازون لشراء المنتجات الرقمية والأكواد من متجر Amazon.",
-        "long_desc_en": "Amazon gift card to buy digital items and codes from Amazon.",
-        "platform": "Amazon",
-        "active": "1",
-        "options": "10$:4.5|20$:8.5|50$:20.5"
-      },
-      {
-        "id": "card7",
-        "name_ar": "اشتراكات chatGPT",
-        "name_en": "chatgpt plus",
-        "price_omr": "8",
-        "discount_price_omr": "2",
-        "status": "sale",
-        "images": "prod_gpt.png",
-        "short_desc_ar": "",
-        "short_desc_en": "product is a digital code you use in your personal accouny",
-        "long_desc_ar": "📌 تعليمات كل خيار من خيارات الاشتراك\n\n1️⃣ chatGPT Plus  حساب جاهز\n• يتم تسليمك إيميل وكلمة مرور لحساب جاهز\n• الحساب مفعل عليه اشتراك ChatGPT Plus وجاهز للاستخدام مباشرة\n\n2️⃣ chatGPT Business Plus على ايميلك (اشتراك او تجديد)\n• ترسل لنا الإيميل المسجل في ChatGPT\n• نرسل لك دعوة الانضمام لاشتراك Business على الإيميل\n• تقوم بقبول الدعوة من الإيميل\n• بعدها تحصل على مساحة Business Plus بجميع مميزات الاشتراك\n\n3️⃣ chatGPT chatGPT Plus   على حسابك الشخصي (اشتراك او تجديد)\n• ترسل لنا إيميل وكلمة المرور لحساب ChatGPT\n• نقوم بتجديد الاشتراك لك\n• بعد الانتهاء يمكنك تغيير كلمة المرور واستخدام الحساب بشكل طبيعي",
-        "long_desc_en": "",
-        "platform": "chatgpt",
-        "active": "1",
-        "options": "حساب chatGPT Plus (حساب جاهز):1|شحن chatGPT Business Plus على ايميلك:2|شحن chatGPT Plus على حسابك الشخصي:4"
-      }
-    ]
+    "pc_games": [],
+    "cards": []
   }
 }
