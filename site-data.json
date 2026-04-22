@@ -132,22 +132,6 @@
         "options": "شهر:1|ثلاث اشهر:2|ست اشهر:3|سنه:4"
       },
       {
-        "id": "card3",
-        "name_ar": "شات جيبيتي بلس",
-        "name_en": "ChatGPT PLUS",
-        "price_omr": "8",
-        "discount_price_omr": "2.5",
-        "status": "new",
-        "images": "assets/ChatGPT.png",
-        "short_desc_ar": "شات جيبيتي بلس",
-        "short_desc_en": "ChatGPT PLUS",
-        "long_desc_ar": "🤖 ChatGPT – شهر\n• دعم GPT-4\n• تحليل صور وملفات\n• إنشاء صور بالذكاء الاصطناعي\n• كتابة وتلخيص متقدم\n• التفعيل على بريدك الإلكتروني 📧",
-        "long_desc_en": "",
-        "platform": "",
-        "active": "1",
-        "options": ""
-      },
-      {
         "id": "card4",
         "name_ar": "يوتيوب بريميوم",
         "name_en": "YouTube Premium",
@@ -194,6 +178,22 @@
         "platform": "crunchyroll",
         "active": "1",
         "options": "شهر:2|سنه:5"
+      },
+      {
+        "id": "card3",
+        "name_ar": "شات جيبيتي بلس",
+        "name_en": "ChatGPT PLUS",
+        "price_omr": "8",
+        "discount_price_omr": "2.5",
+        "status": "soldout",
+        "images": "assets/ChatGPT.png",
+        "short_desc_ar": "شات جيبيتي بلس",
+        "short_desc_en": "ChatGPT PLUS",
+        "long_desc_ar": "🤖 ChatGPT – شهر\n• دعم GPT-4\n• تحليل صور وملفات\n• إنشاء صور بالذكاء الاصطناعي\n• كتابة وتلخيص متقدم\n• التفعيل على بريدك الإلكتروني 📧",
+        "long_desc_en": "",
+        "platform": "",
+        "active": "1",
+        "options": ""
       }
     ],
     "ps_games": [],
