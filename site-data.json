@@ -11,13 +11,6 @@
   },
   "categories": [
     {
-      "key": "fortnite",
-      "name_ar": "فورت نايت",
-      "name_en": "Fortnite",
-      "banner_image": "assets/fort-banner.png",
-      "active": true
-    },
-    {
       "key": "ps_games",
       "name_ar": "العاب سوني",
       "name_en": "PS games",
@@ -47,7 +40,6 @@
     }
   ],
   "products": {
-    "fortnite": [],
     "pc_games": [
       {
         "id": "offline2",
@@ -205,7 +197,7 @@
         "images": "assets/Cvana.png",
         "short_desc_ar": "اشتراك Canva Pro مده سنه",
         "short_desc_en": "",
-        "long_desc_ar": "شتراك Canva Pro مده سنه ✅",
+        "long_desc_ar": "✨ صمّم بسهولة واحترافية مع Canva\n\nحوّل أفكارك إلى تصاميم مذهلة خلال دقائق!\n\nمع Canva، تقدر تصمم كل اللي تحتاجه بدون خبرة مسبقة:\n\n•   بوستات سوشيال ميديا 📱\n•   شعارات احترافية 🎨\n•   عروض تقديمية قوية 📊\n•   بوسترات وإعلانات جذابة 🚀\n\n\n💡 ليش تختار Canva ؟\n\n•  واجهة سهلة جدًا — أي شخص يقدر يستخدمها\n•  آلاف القوالب الجاهزة\n•  مكتبة ضخمة من الصور والخطوط\n•  توفير وقت وجهد بدل برامج التصميم المعقدة\n\n\n🚀 مناسب لـ:\n\n•  أصحاب المشاريع\n•  صناع المحتوى\n•  الطلاب\n•  أي شخص يبغى تصاميم احترافية بسرعة",
         "long_desc_en": "",
         "platform": "Canva",
         "active": "1",
@@ -227,7 +219,7 @@
         "long_desc_en": "",
         "platform": "PS5 & PS4",
         "active": "1",
-        "options": "PS5:5.5|PS4:5"
+        "options": "PS4:5|PS5:5.5"
       },
       {
         "id": "gm1",
@@ -243,7 +235,7 @@
         "long_desc_en": "",
         "platform": "PS5 & PS4",
         "active": "1",
-        "options": "PS5:6.5|PS4:5.5"
+        "options": "PS4:5.5|PS5:6.5"
       }
     ],
     "pc_pack": [
