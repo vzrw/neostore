@@ -194,9 +194,58 @@
         "platform": "",
         "active": "1",
         "options": ""
+      },
+      {
+        "id": "card7",
+        "name_ar": "Canva Pro",
+        "name_en": "",
+        "price_omr": "48",
+        "discount_price_omr": "1.4",
+        "status": "new",
+        "images": "assets/Cvana.png",
+        "short_desc_ar": "اشتراك Canva Pro مده سنه",
+        "short_desc_en": "",
+        "long_desc_ar": "شتراك Canva Pro مده سنه ✅",
+        "long_desc_en": "",
+        "platform": "Canva",
+        "active": "1",
+        "options": ""
       }
     ],
-    "ps_games": [],
+    "ps_games": [
+      {
+        "id": "gm2",
+        "name_ar": "GTA V",
+        "name_en": "",
+        "price_omr": "5",
+        "discount_price_omr": "",
+        "status": "new",
+        "images": "assets/Gta.png",
+        "short_desc_ar": "GTA V | PS5 & PS4",
+        "short_desc_en": "",
+        "long_desc_ar": "✅  تلعب اللعبة على حسابك الأساسي اونلاين و اوفلاين\n\n♾️  النسخة تبقى معك مدى الحياة\n\n🛡️  ضمان لمدة سنه\n\n💸  سعر أقل من النسخة الأصلية\n\n\n🔐 شروط المنتج مهمة جدًا:\n\n1️⃣ ممنوع تغيير أي معلومات أو بيانات داخل الحساب نهائيًا ❌\n\n2️⃣ ممنوع مشاركة الحساب مع أي شخص آخر ❌\n\n3️⃣ لا يحق نقل اللعبة بين جهازين مختلفين (مثل PS4 إلى PS5 أو العكس) ❌",
+        "long_desc_en": "",
+        "platform": "PS5 & PS4",
+        "active": "1",
+        "options": "PS5:5.5|PS4:5"
+      },
+      {
+        "id": "gm1",
+        "name_ar": "Red Dead Redemption 2",
+        "name_en": "",
+        "price_omr": "5.5",
+        "discount_price_omr": "",
+        "status": "new",
+        "images": "assets/Red2.png",
+        "short_desc_ar": "Red Dead Redemption 2 | PS5 & PS4",
+        "short_desc_en": "",
+        "long_desc_ar": "✅  تلعب اللعبة على حسابك الأساسي اونلاين و اوفلاين\n\n♾️  النسخة تبقى معك مدى الحياة\n\n🛡️  ضمان لمدة سنه\n\n💸  سعر أقل من النسخة الأصلية\n\n\n🔐 شروط المنتج مهمة جدًا:\n\n1️⃣ ممنوع تغيير أي معلومات أو بيانات داخل الحساب نهائيًا ❌\n\n2️⃣ ممنوع مشاركة الحساب مع أي شخص آخر ❌\n\n3️⃣ لا يحق نقل اللعبة بين جهازين مختلفين (مثل PS4 إلى PS5 أو العكس) ❌",
+        "long_desc_en": "",
+        "platform": "PS5 & PS4",
+        "active": "1",
+        "options": "PS5:6.5|PS4:5.5"
+      }
+    ],
     "pc_pack": [
       {
         "id": "pack1",
