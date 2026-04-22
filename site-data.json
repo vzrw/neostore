@@ -37,11 +37,67 @@
       "name_en": "Cards & Subscriptions",
       "banner_image": "assets/cards-subb-banner.png",
       "active": true
+    },
+    {
+      "key": "pc_pack",
+      "name_ar": "بكجات العاب PC",
+      "name_en": "PC Games Pack",
+      "banner_image": "assets/Pack-banner.png",
+      "active": true
     }
   ],
   "products": {
     "fortnite": [],
-    "pc_games": [],
+    "pc_games": [
+      {
+        "id": "offline2",
+        "name_ar": "GOD OF WAR RAGNAROK PC (OFFLINE)",
+        "name_en": "",
+        "price_omr": "1.7",
+        "discount_price_omr": "",
+        "status": "new",
+        "images": "assets/GodofWar.png",
+        "short_desc_ar": "GOD OF WAR RAGNAROK | قود اوف وار راقناروك لل PC - ستيم اوفلاين",
+        "short_desc_en": "",
+        "long_desc_ar": "✅ المميزات | Neostore\n•  حساب ستيم للبي سي بطريقة نظامية وامنة 💯\n•  ضمان 6 شهور ✔\n•  دعم واضح خطوة بخطوة\n\n\n\n🗒 شروط وملاحظات\nيمنع استخدام الحساب على اكثر من جهاز واحد\nالحساب مشترك وهذا ما يأثر عليك اذا التزمت بالطريقة\nالضمان 6 شهور بشرط عدم تغيير بيانات الحساب\nاي تغيير بالبيانات يلغي الضمان",
+        "long_desc_en": "",
+        "platform": "Steam",
+        "active": "1",
+        "options": ""
+      },
+      {
+        "id": "offline1",
+        "name_ar": "The Last Of Us 2 PC (OFFLINE)",
+        "name_en": "",
+        "price_omr": "1.5",
+        "discount_price_omr": "",
+        "status": "new",
+        "images": "assets/LastUs2.png",
+        "short_desc_ar": "THE LAST OF US II | لاست اوف اسس 2 لل PC - ستيم اوفلاين",
+        "short_desc_en": "",
+        "long_desc_ar": "✅ المميزات | Neostore\n•  حساب ستيم للبي سي بطريقة نظامية وامنة 💯\n•  ضمان 6 شهور ✔\n•  دعم واضح خطوة بخطوة\n\n\n\n🗒 شروط وملاحظات\nيمنع استخدام الحساب على اكثر من جهاز واحد\nالحساب مشترك وهذا ما يأثر عليك اذا التزمت بالطريقة\nالضمان 6 شهور بشرط عدم تغيير بيانات الحساب\nاي تغيير بالبيانات يلغي الضمان",
+        "long_desc_en": "",
+        "platform": "Steam",
+        "active": "1",
+        "options": ""
+      },
+      {
+        "id": "offline3",
+        "name_ar": "Resident Evil 4 Remake PC (OFFLINE)",
+        "name_en": "",
+        "price_omr": "1",
+        "discount_price_omr": "10.9",
+        "status": "new",
+        "images": "assets/Evil4.png",
+        "short_desc_ar": "RESIDENT EVIL 4 | رزدنت ايفل 4 لل PC- ستيم اوفلاين",
+        "short_desc_en": "",
+        "long_desc_ar": "✅ المميزات | Neostore\n•  حساب ستيم للبي سي بطريقة نظامية وامنة 💯\n•  ضمان 6 شهور ✔\n•  دعم واضح خطوة بخطوة\n\n\n\n🗒 شروط وملاحظات\nيمنع استخدام الحساب على اكثر من جهاز واحد\nالحساب مشترك وهذا ما يأثر عليك اذا التزمت بالطريقة\nالضمان 6 شهور بشرط عدم تغيير بيانات الحساب\nاي تغيير بالبيانات يلغي الضمان",
+        "long_desc_en": "",
+        "platform": "Steam",
+        "active": "1",
+        "options": ""
+      }
+    ],
     "cards": [
       {
         "id": "card1",
@@ -140,6 +196,56 @@
         "options": "شهر:2|سنه:5"
       }
     ],
-    "ps_games": []
+    "ps_games": [],
+    "pc_pack": [
+      {
+        "id": "pack1",
+        "name_ar": "Dark Souls Package PC (OFFLINE)",
+        "name_en": "",
+        "price_omr": "1",
+        "discount_price_omr": "",
+        "status": "new",
+        "images": "assets/Darksouls.png",
+        "short_desc_ar": "دارك سولز | Dark Souls | Dark Souls Package لل PC - ستيم اوفلاين",
+        "short_desc_en": "",
+        "long_desc_ar": "✅ مميزات البكج | Neostore\n•  حسابات ستيم للبي سي بطريقة نظامية وامنة 💯\n•  ضمان 6 شهور ✔\n•  دعم واضح خطوة بخطوة\n\n\n🗒 شروط وملاحظات\nيمنع استخدام الحسابات على اكثر من جهاز واحد\nالحسابات مشتركه وهذا ما يأثر عليك اذا التزمت بالطريقة\nالضمان 6 شهور بشرط عدم تغيير بيانات الحسابات\nاي تغيير بالبيانات يلغي الضمان",
+        "long_desc_en": "",
+        "platform": "PC",
+        "active": "1",
+        "options": ""
+      },
+      {
+        "id": "pack2",
+        "name_ar": "PC Games Pack +8000 (OFFLINE)",
+        "name_en": "",
+        "price_omr": "4",
+        "discount_price_omr": "47.99",
+        "status": "new",
+        "images": "assets/Bak8000.png",
+        "short_desc_ar": "PC Games Pack +8000 | بكجك العاب لل PC",
+        "short_desc_en": "",
+        "long_desc_ar": "✅ مميزات البكج | Neostore\n•  حسابات ستيم للبي سي بطريقة نظامية وامنة 💯\n•  ضمان 6 شهور ✔\n•  دعم واضح خطوة بخطوة\n\n\n🗒 شروط وملاحظات\nيمنع استخدام الحسابات على اكثر من جهاز واحد\nالحسابات مشتركه وهذا ما يأثر عليك اذا التزمت بالطريقة\nالضمان 6 شهور بشرط عدم تغيير بيانات الحسابات\nاي تغيير بالبيانات يلغي الضمان",
+        "long_desc_en": "",
+        "platform": "PC",
+        "active": "1",
+        "options": ""
+      },
+      {
+        "id": "pack3",
+        "name_ar": "PC Games Pack Simulation & Car (OFFLINE)",
+        "name_en": "",
+        "price_omr": "3.5",
+        "discount_price_omr": "37.99",
+        "status": "new",
+        "images": "assets/Sum-car.png",
+        "short_desc_ar": "PC Games Pack Simulation & Car |  بكجك العاب لل PC محاكاه و سيارات",
+        "short_desc_en": "",
+        "long_desc_ar": "✅ مميزات البكج | Neostore\n•  حسابات ستيم للبي سي بطريقة نظامية وامنة 💯\n•  ضمان 6 شهور ✔\n•  دعم واضح خطوة بخطوة\n\n\n🗒 شروط وملاحظات\nيمنع استخدام الحسابات على اكثر من جهاز واحد\nالحسابات مشتركه وهذا ما يأثر عليك اذا التزمت بالطريقة\nالضمان 6 شهور بشرط عدم تغيير بيانات الحسابات\nاي تغيير بالبيانات يلغي الضمان",
+        "long_desc_en": "",
+        "platform": "PC",
+        "active": "1",
+        "options": ""
+      }
+    ]
   }
 }
