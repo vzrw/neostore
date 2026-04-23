@@ -88,6 +88,22 @@
         "platform": "Steam",
         "active": "1",
         "options": ""
+      },
+      {
+        "id": "offline4",
+        "name_ar": "Forza Horizon 5 PC (OFFLINE)",
+        "name_en": "",
+        "price_omr": "23.47",
+        "discount_price_omr": "1.2",
+        "status": "new",
+        "images": "assets/Forza.png",
+        "short_desc_ar": "Forza Horizon 5 | فورزا هوريزون لل بي سي - ستيم اوفلاين",
+        "short_desc_en": "",
+        "long_desc_ar": "✅ المميزات | Neostore\n•  حساب ستيم للبي سي بطريقة نظامية وامنة 💯\n•  ضمان 6 شهور ✔\n•  دعم واضح خطوة بخطوة\n\n\n\n🗒 شروط وملاحظات\nيمنع استخدام الحساب على اكثر من جهاز واحد\nالحساب مشترك وهذا ما يأثر عليك اذا التزمت بالطريقة\nالضمان 6 شهور بشرط عدم تغيير بيانات الحساب\nاي تغيير بالبيانات يلغي الضمان",
+        "long_desc_en": "",
+        "platform": "Steam",
+        "active": "1",
+        "options": ""
       }
     ],
     "cards": [
@@ -236,6 +252,22 @@
         "platform": "PS5 & PS4",
         "active": "1",
         "options": "PS4:5.5|PS5:6.5"
+      },
+      {
+        "id": "offline5",
+        "name_ar": "Elden Ring: Night Reign PC (OFFLINE)",
+        "name_en": "",
+        "price_omr": "24.78",
+        "discount_price_omr": "1.2",
+        "status": "new",
+        "images": "assets/Elden.png",
+        "short_desc_ar": "Elden Ring NigtReign | ايلدن رينق نايت رين لل بي سي - ستيم اوفلاين",
+        "short_desc_en": "",
+        "long_desc_ar": "✅ المميزات | Neostore\n•  حساب ستيم للبي سي بطريقة نظامية وامنة 💯\n•  ضمان 6 شهور ✔\n•  دعم واضح خطوة بخطوة\n\n\n\n🗒 شروط وملاحظات\nيمنع استخدام الحساب على اكثر من جهاز واحد\nالحساب مشترك وهذا ما يأثر عليك اذا التزمت بالطريقة\nالضمان 6 شهور بشرط عدم تغيير بيانات الحساب\nاي تغيير بالبيانات يلغي الضمان",
+        "long_desc_en": "",
+        "platform": "Steam",
+        "active": "1",
+        "options": ""
       }
     ],
     "pc_pack": [
@@ -280,6 +312,22 @@
         "status": "new",
         "images": "assets/Bak8000.png",
         "short_desc_ar": "PC Games Pack +8000 | بكجك العاب لل PC",
+        "short_desc_en": "",
+        "long_desc_ar": "✅ مميزات البكج | Neostore\n•  حسابات ستيم للبي سي بطريقة نظامية وامنة 💯\n•  ضمان 6 شهور ✔\n•  دعم واضح خطوة بخطوة\n\n\n🗒 شروط وملاحظات\nيمنع استخدام الحسابات على اكثر من جهاز واحد\nالحسابات مشتركه وهذا ما يأثر عليك اذا التزمت بالطريقة\nالضمان 6 شهور بشرط عدم تغيير بيانات الحسابات\nاي تغيير بالبيانات يلغي الضمان",
+        "long_desc_en": "",
+        "platform": "PC",
+        "active": "1",
+        "options": ""
+      },
+      {
+        "id": "pack4",
+        "name_ar": "Mafia Package PC (OFFLINE)",
+        "name_en": "",
+        "price_omr": "99.42",
+        "discount_price_omr": "1.3",
+        "status": "new",
+        "images": "assets/MafiaPak.png",
+        "short_desc_ar": "Mafia Package | بكج مافيا لل بي سي - ستيم اوفلاين",
         "short_desc_en": "",
         "long_desc_ar": "✅ مميزات البكج | Neostore\n•  حسابات ستيم للبي سي بطريقة نظامية وامنة 💯\n•  ضمان 6 شهور ✔\n•  دعم واضح خطوة بخطوة\n\n\n🗒 شروط وملاحظات\nيمنع استخدام الحسابات على اكثر من جهاز واحد\nالحسابات مشتركه وهذا ما يأثر عليك اذا التزمت بالطريقة\nالضمان 6 شهور بشرط عدم تغيير بيانات الحسابات\nاي تغيير بالبيانات يلغي الضمان",
         "long_desc_en": "",
