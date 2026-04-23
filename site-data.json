@@ -136,6 +136,38 @@
         "platform": "Steam",
         "active": "1",
         "options": ""
+      },
+      {
+        "id": "offline8",
+        "name_ar": "Metal Gear solid Snake eater Delux edition PC (OFFLINE)",
+        "name_en": "",
+        "price_omr": "0.5",
+        "discount_price_omr": "",
+        "status": "new",
+        "images": "assets/Metal.png",
+        "short_desc_ar": "Metal Gear solid Snake eater Delux edition | ميتال قير ديلوكس لل بي سي - ستيم اوفلاين",
+        "short_desc_en": "",
+        "long_desc_ar": "✅ المميزات | Neostore\n•  حساب ستيم للبي سي بطريقة نظامية وامنة 💯\n•  ضمان 6 شهور ✔\n•  دعم واضح خطوة بخطوة\n\n\n\n🗒 شروط وملاحظات\nيمنع استخدام الحساب على اكثر من جهاز واحد\nالحساب مشترك وهذا ما يأثر عليك اذا التزمت بالطريقة\nالضمان 6 شهور بشرط عدم تغيير بيانات الحساب\nاي تغيير بالبيانات يلغي الضمان",
+        "long_desc_en": "",
+        "platform": "Steam",
+        "active": "1",
+        "options": ""
+      },
+      {
+        "id": "offline7",
+        "name_ar": "LITTLE NIGHTMARES III PC (OFFLINE)",
+        "name_en": "",
+        "price_omr": "0.4",
+        "discount_price_omr": "",
+        "status": "new",
+        "images": "assets/Little.png",
+        "short_desc_ar": "LITTLE NIGHTMARES | ليتل نايتمرز 3  لل بي سي - ستيم اوفلاين",
+        "short_desc_en": "",
+        "long_desc_ar": "✅ المميزات | Neostore\n•  حساب ستيم للبي سي بطريقة نظامية وامنة 💯\n•  ضمان 6 شهور ✔\n•  دعم واضح خطوة بخطوة\n\n\n\n🗒 شروط وملاحظات\nيمنع استخدام الحساب على اكثر من جهاز واحد\nالحساب مشترك وهذا ما يأثر عليك اذا التزمت بالطريقة\nالضمان 6 شهور بشرط عدم تغيير بيانات الحساب\nاي تغيير بالبيانات يلغي الضمان",
+        "long_desc_en": "",
+        "platform": "Steam",
+        "active": "1",
+        "options": ""
       }
     ],
     "cards": [
@@ -380,38 +412,6 @@
         "platform": "PS5 & PS4",
         "active": "1",
         "options": "PS4:4.2|PS5:9.4"
-      },
-      {
-        "id": "offline7",
-        "name_ar": "LITTLE NIGHTMARES III PC (OFFLINE)",
-        "name_en": "",
-        "price_omr": "0.4",
-        "discount_price_omr": "",
-        "status": "new",
-        "images": "assets/Little.png",
-        "short_desc_ar": "LITTLE NIGHTMARES | ليتل نايتمرز 3  لل بي سي - ستيم اوفلاين",
-        "short_desc_en": "",
-        "long_desc_ar": "✅ المميزات | Neostore\n•  حساب ستيم للبي سي بطريقة نظامية وامنة 💯\n•  ضمان 6 شهور ✔\n•  دعم واضح خطوة بخطوة\n\n\n\n🗒 شروط وملاحظات\nيمنع استخدام الحساب على اكثر من جهاز واحد\nالحساب مشترك وهذا ما يأثر عليك اذا التزمت بالطريقة\nالضمان 6 شهور بشرط عدم تغيير بيانات الحساب\nاي تغيير بالبيانات يلغي الضمان",
-        "long_desc_en": "",
-        "platform": "Steam",
-        "active": "1",
-        "options": ""
-      },
-      {
-        "id": "offline8",
-        "name_ar": "Metal Gear solid Snake eater Delux edition PC (OFFLINE)",
-        "name_en": "",
-        "price_omr": "0.5",
-        "discount_price_omr": "",
-        "status": "new",
-        "images": "assets/Metal.png",
-        "short_desc_ar": "Metal Gear solid Snake eater Delux edition | ميتال قير ديلوكس لل بي سي - ستيم اوفلاين",
-        "short_desc_en": "",
-        "long_desc_ar": "✅ المميزات | Neostore\n•  حساب ستيم للبي سي بطريقة نظامية وامنة 💯\n•  ضمان 6 شهور ✔\n•  دعم واضح خطوة بخطوة\n\n\n\n🗒 شروط وملاحظات\nيمنع استخدام الحساب على اكثر من جهاز واحد\nالحساب مشترك وهذا ما يأثر عليك اذا التزمت بالطريقة\nالضمان 6 شهور بشرط عدم تغيير بيانات الحساب\nاي تغيير بالبيانات يلغي الضمان",
-        "long_desc_en": "",
-        "platform": "Steam",
-        "active": "1",
-        "options": ""
       }
     ],
     "pc_pack": [
