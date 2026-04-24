@@ -37,6 +37,13 @@
       "name_en": "PC Games Pack",
       "banner_image": "assets/Pack-banner.png",
       "active": true
+    },
+    {
+      "key": "social",
+      "name_ar": "خدمات مواقع التواصل الاجتماعي",
+      "name_en": "Social",
+      "banner_image": "assets/Social-banner.png",
+      "active": true
     }
   ],
   "products": {
@@ -478,6 +485,104 @@
         "platform": "PC",
         "active": "1",
         "options": ""
+      }
+    ],
+    "social": [
+      {
+        "id": "soc1",
+        "name_ar": "مشاهدات منصة إكس",
+        "name_en": "",
+        "price_omr": "0.150",
+        "discount_price_omr": "",
+        "status": "new",
+        "images": "assets/xv.png",
+        "short_desc_ar": "X views",
+        "short_desc_en": "",
+        "long_desc_ar": "⚠ ملاحظة:\nفقط احتاج منك رابط الفيديو\n🔓 يرجى التأكد من أن حسابك عام وليس خاصًا.",
+        "long_desc_en": "",
+        "platform": "X",
+        "active": "1",
+        "options": "1K:0.150|5K:0.250|10k:0.500|100K:1.5"
+      },
+      {
+        "id": "soc2",
+        "name_ar": "لايكات منصة إكس",
+        "name_en": "",
+        "price_omr": "0.500",
+        "discount_price_omr": "",
+        "status": "new",
+        "images": "assets/xl.png",
+        "short_desc_ar": "X likes",
+        "short_desc_en": "",
+        "long_desc_ar": "⚠ ملاحظة:\nفقط احتاج منك رابط الفيديو\n🔓 يرجى التأكد من أن حسابك عام وليس خاصًا.",
+        "long_desc_en": "",
+        "platform": "X",
+        "active": "1",
+        "options": "1K:0.500|5K:1.100|10k:1.700"
+      },
+      {
+        "id": "soc3",
+        "name_ar": "مشاهدات تيك توك",
+        "name_en": "",
+        "price_omr": "0.150",
+        "discount_price_omr": "",
+        "status": "new",
+        "images": "assets/tikv.png",
+        "short_desc_ar": "Tiktok views",
+        "short_desc_en": "",
+        "long_desc_ar": "⚠ ملاحظة:\nفقط احتاج منك رابط الفيديو\n🔓 يرجى التأكد من أن حسابك عام وليس خاصًا.",
+        "long_desc_en": "",
+        "platform": "Tiktok",
+        "active": "1",
+        "options": "1K:0.150|5K:0.300|10k:0.500|100K:1.5"
+      },
+      {
+        "id": "soc4",
+        "name_ar": "لايكات تيك توك",
+        "name_en": "",
+        "price_omr": "0.200",
+        "discount_price_omr": "",
+        "status": "new",
+        "images": "assets/tikl.png",
+        "short_desc_ar": "Tiktok likes",
+        "short_desc_en": "",
+        "long_desc_ar": "⚠ ملاحظة:\nفقط احتاج منك رابط الفيديو\n🔓 يرجى التأكد من أن حسابك عام وليس خاصًا.\n\nضمان ٩٠ يوم ✅",
+        "long_desc_en": "",
+        "platform": "Tiktok",
+        "active": "1",
+        "options": "1K:0.200|5K:0.300|10k:0.600|100k:1.800"
+      },
+      {
+        "id": "soc5",
+        "name_ar": "مشاهدات إنستغرام",
+        "name_en": "",
+        "price_omr": "0.150",
+        "discount_price_omr": "",
+        "status": "new",
+        "images": "assets/instav.png",
+        "short_desc_ar": "Instagram views",
+        "short_desc_en": "",
+        "long_desc_ar": "⚠ ملاحظة:\nفقط احتاج منك رابط الفيديو\n🔓 يرجى التأكد من أن حسابك عام وليس خاصًا.",
+        "long_desc_en": "",
+        "platform": "Instagram",
+        "active": "1",
+        "options": "1K:0.150|5K:0.250|10k:0.500|100k:1.500"
+      },
+      {
+        "id": "soc6",
+        "name_ar": "لايكات إنستغرام",
+        "name_en": "",
+        "price_omr": "0.200",
+        "discount_price_omr": "",
+        "status": "new",
+        "images": "assets/instal.png",
+        "short_desc_ar": "Instagram likes",
+        "short_desc_en": "",
+        "long_desc_ar": "⚠ ملاحظة:\nفقط احتاج منك رابط الفيديو\n🔓 يرجى التأكد من أن حسابك عام وليس خاصًا.",
+        "long_desc_en": "",
+        "platform": "Instagram",
+        "active": "1",
+        "options": "1K:0.200|5K:0.500|10k:1"
       }
     ]
   }
